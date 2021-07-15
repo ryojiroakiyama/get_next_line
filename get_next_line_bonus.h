@@ -10,7 +10,7 @@ size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
 char			*ft_subnstr(char const *s, unsigned int start, size_t len);
 char			*ft_strnjoin(char const *s1, char const *s2, size_t s2_len);
 int				ft_free(char **f);
-ssize_t			by_stock(char **stock, char **line);
+int				by_stock(char **stock, char **line);
 int				prepare_mem(int sign, char **line, char **buff);
 ssize_t			by_buff(char **buff, char **line, char **stock, ssize_t rc);
 int				get_next_line(int fd, char **line);
