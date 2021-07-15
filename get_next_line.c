@@ -1,5 +1,9 @@
 #include "get_next_line.h"
 
+#ifndef BUFFER_SIZE
+# define BUFFER_SIZE 32
+#endif
+
 int	ft_free(char **f)
 {
 	if (*f)
@@ -8,7 +12,7 @@ int	ft_free(char **f)
 	return (-1);
 }
 
-ssize_t	by_stock(char **stock, char **line)
+int	by_stock(char **stock, char **line)
 {
 	ssize_t	nl;
 	char	*tmp;
